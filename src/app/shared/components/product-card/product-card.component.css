@@ -1,0 +1,12 @@
+.product-card{
+    border:1px solid #d3d3d3;
+    width:50%;
+   
+}
+#add-to-cart-button{
+    width: 100%;
+    background-color: #6a727b;
+}
+#product-image{
+    width: 100%;
+}

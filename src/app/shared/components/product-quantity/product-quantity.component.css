@@ -1,0 +1,11 @@
+#product-quanity{
+   
+}
+button{
+    width: 20%;
+}
+span{
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+}

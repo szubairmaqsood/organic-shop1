@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BsNavbarComponent implements OnInit {
 
+  menuClass:string="menuListHidden";
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showMenu(){
+    //alert("Named Clicked");
+    if(this.menuClass=="menuListHidden")
+    {
+      this.menuClass="menuListshow";
+    }else{
+      this.menuClass="menuListHidden";
+    }
   }
 
 }

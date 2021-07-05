@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-filter.component.css']
 })
 export class ProductFilterComponent implements OnInit {
-
+  categories:String[]=['Bread','Dairy','Fruits','Seasoning and Spices','Vegetables'];
   constructor() { }
 
   ngOnInit(): void {
