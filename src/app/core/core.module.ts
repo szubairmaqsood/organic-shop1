@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { BsNavbarComponent } from './components/bs-navbar/bs-navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -13,7 +15,8 @@ import { LoginComponent } from './components/login/login.component';
     LoginComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class CoreModule { }
