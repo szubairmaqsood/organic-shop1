@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {HttpClientModule} from '@angular/common/http';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ProductQuantityComponent } from './components/product-quantity/product-quantity.component';
 
@@ -11,7 +12,8 @@ import { ProductQuantityComponent } from './components/product-quantity/product-
     ProductQuantityComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule,
   ]
 })
 export class SharedModule { }

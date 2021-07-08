@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CategoriesService } from 'src/app/shared/services/categories.service';
+import { Category } from './../../../../shared/models/category';
+
 
 @Component({
   selector: 'app-product-filter',
@@ -6,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-filter.component.css']
 })
 export class ProductFilterComponent implements OnInit {
-  categories:String[]=['Bread','Dairy','Fruits','Seasoning and Spices','Vegetables'];
-  constructor() { }
+  categories:Category[]=[];
+  constructor( private categoryService:CategoriesService) { }
 
   ngOnInit(): void {
+    this.categoryService.getAll().subscribe((categories) => this.categories = categories)
   }
 
 }
