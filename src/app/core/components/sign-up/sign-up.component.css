@@ -1,4 +1,4 @@
-.login-form {
+.signup-form {
     box-sizing: border-box;
     box-shadow: 5px 10px;
     width: 40%;
@@ -11,13 +11,13 @@
   
   h2,
   .form-control,
-  #login-button {
+  #signup-button {
     width: 60%;
     margin: auto;
   }
   
   h2,
-  #login-button {
+  #signup-button {
     background-color: #1284c9;
     color: white;
   }
@@ -39,7 +39,7 @@
     margin-left: 20%;
   }
   
-  #login-button {
+  #signup-button {
     height: 32px;
     font-size: 20px;
     border-radius: 5px;
